@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<form action="{% url 'contacts' %}" method="POST">
+    {% csrf_token %}
+    <div class="form">
+        {% for form in form %}
+        <p><label class="form-label" for="{{form.id_for_label}}">{{form.label}}: </label>{{form}}</p>
+        {% endfor %}
+        <button type="submit">Send</button>
+    </div>
+    
+</form>
+{% endblock %}

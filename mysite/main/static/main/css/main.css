@@ -1,0 +1,138 @@
+.nav_item {
+    padding-left: 25px;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+    padding-bottom: 10px;
+    color: #c13d3d;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+}
+
+main {
+    color: #b8b7b7;
+    width: 100%;
+    float: right;
+    margin-left: 20%;
+}
+
+.head {
+    color: #fff;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background-color: #232323;
+    height: 100vh;
+}
+
+html {
+    height: 100vh;
+}
+
+.logo {
+    padding: 20px;
+    display: flex;
+}
+
+.img_nav {
+    border-radius: 40px;
+    margin: 0;
+    height: 65px;
+    width: 60px;
+}
+
+.name {
+    padding-top: 15px;
+    font-size: 35px;
+    padding-left: 15px;
+    color: #e15a5a;
+    text-decoration: none;
+}
+
+.name:hover {
+    color: #d35050;
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #353535;
+    border-right: 3px solid #2e2e2e;
+}
+
+.nav {
+    font-size: 25px;
+    height: 100px;
+    display: block;
+    padding-left: 20px;
+    
+}
+
+.nav_item:hover {
+    color: #b43737;
+    text-decoration: underline;
+}
+
+.rez {color: #f79292; margin-left: 15px; text-align: center;}
+
+.about_item {
+    list-style: none;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.about_items {
+    list-style: none;
+    padding: 0;
+}
+
+.img_post {height: 60%; width: 90%;}
+
+.post {margin-left: 20px;}
+
+.cont {border-top: 3px solid #2e2e2e; width: 100%;}
+
+.date {margin-left: 80%; color: #ddaaaa;}
+
+.information {margin-left: 20px;}
+.ab_me {margin-left: 20px;}
+.ab_me ul, li {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.skills {color: #9f5757; margin-left: 10px;}
+
+.read_btn {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.r_btn {
+    text-align: center;
+    height: 30px;
+    width: 70px;
+    margin-left: 80%;
+    border-radius: 15px;
+    border: 4px solid #000000;
+    background-color: #cc9331;
+}
+
+.git {
+    text-decoration: none;
+    color: #934b4b;
+    font-size: 30px;
+}
+
+.form {
+    margin-left: 10px;
+}

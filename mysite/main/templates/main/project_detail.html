@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+    
+    <div class="cont">
+        <div class="post">
+            <h1>{{object.title}}</h1>
+            <h3>{{object.text}}</h3>
+            {% if object.photo %}
+            <p><img class="img_post" src="{{ object.photo.url }}" alt=""></p>
+            {% endif%}
+            <h4 class="date">Date: {{object.date|date:"d-m-Y H:i:s"}}</h4>
+        </div>
+    </div>
+
+{% endblock %}

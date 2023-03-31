@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+    <aside>
+        <div class="container">
+            <div class="logo">
+                <img class="img_nav" src="{% static 'main/img/logo.jpg' %}" alt="Nazim">
+                <a class="name" href="{% url 'home' %}">Nazim M</a>
+            </div>
+            <div class="nav">
+                <a class="nav_item" href="{% url 'home' %}">General</a>
+                <a class="nav_item" href="{% url 'about' %}">About</a>
+                <a class="nav_item" href="{% url 'projects' %}">Projects</a>
+                <a class="nav_item" href="{% url 'contacts' %}">Contacts</a>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+</body>
+</html>

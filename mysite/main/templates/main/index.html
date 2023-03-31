@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+
+
+{% block content %}
+<h1 class="head">GENERAL</h1>
+
+{% for post in Posts %}
+<div class="cont">
+    <div class="post">
+        <h1>{{post.title}}</h1>
+        <h3>{{post.text|truncatechars:150}}</h3>
+        {% if post.photo %}
+        <p><img class="img_post" src="{{ post.photo.url }}" alt=""></p>
+        {% endif%}
+        {% if post.git %}
+        <a class="git" href="{{post.git}}">Git</a>
+        {% endif %}
+        <div class="r_btn">
+            <a class="read_btn" href="{{post.get_absolute_url}}">Read</a>
+        </div>
+        <h4 class="date">Date: {{post.date|date:"d-m-Y H:i:s"}}</h4>
+    </div>
+</div>
+
+    
+{% endfor %}
+{% endblock %}
